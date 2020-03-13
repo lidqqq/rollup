@@ -24,7 +24,7 @@ module.exports = {
 
 It may be pertinent if you want to use the config file not only from the command line, but also from your custom scripts programmatically.
 
-Consult the [big list of options](guide/en/#big-list-of-options) for details on each option you can include in your config file.
+Consult the [big list of options](#big-list-of-options) for details on each option you can include in your config file.
 
 ```javascript
 // rollup.config.js
@@ -168,7 +168,7 @@ rollup --config my.config.js
 rollup --config my.config.mjs
 ```
 
-You can also export a function that returns any of the above configuration formats. This function will be passed the current command line arguments so that you can dynamically adapt your configuration to respect e.g. [`--silent`](guide/en/#--silent). You can even define your own command line options if you prefix them with `config`:
+You can also export a function that returns any of the above configuration formats. This function will be passed the current command line arguments so that you can dynamically adapt your configuration to respect e.g. [`--silent`](#--silent). You can even define your own command line options if you prefix them with `config`:
 
 ```javascript
 // rollup.config.js
@@ -261,7 +261,7 @@ Many options have command line equivalents. In those cases, any arguments passed
 --treeshake.pureExternalModules        Assume side-effect free externals
 ```
 
-The flags listed below are only available via the command line interface. All other flags correspond to and override their config file equivalents, see the [big list of options](guide/en/#big-list-of-options) for details.
+The flags listed below are only available via the command line interface. All other flags correspond to and override their config file equivalents, see the [big list of options](#big-list-of-options) for details.
 
 #### `-h`/`--help`
 
@@ -320,7 +320,7 @@ _Note: While in watch mode, the `ROLLUP_WATCH` environment variable will be set 
 
 #### `--silent`
 
-Don't print warnings to the console. If your configuration file contains an `onwarn` handler, this handler will still be called. To manually prevent that, you can access the command line options in your configuration file as described at the end of [Configuration Files](guide/en/#configuration-files).
+Don't print warnings to the console. If your configuration file contains an `onwarn` handler, this handler will still be called. To manually prevent that, you can access the command line options in your configuration file as described at the end of [Configuration Files](#configuration-files).
 
 #### `--environment <values>`
 
@@ -351,7 +351,7 @@ then the config file will receive `process.env.INCLUDE_DEPS === 'true'` and `pro
 
 #### `--no-stdin`
 
-Do not read files from `stdin`. Setting this flag will prevent piping content to Rollup and make sure Rollup interprets `-` as a regular file name instead of interpreting this as the name of `stdin`. See also [Reading a file from stdin](guide/en/#reading-a-file-from-stdin).
+Do not read files from `stdin`. Setting this flag will prevent piping content to Rollup and make sure Rollup interprets `-` as a regular file name instead of interpreting this as the name of `stdin`. See also [Reading a file from stdin](#reading-a-file-from-stdin).
 
 ### Reading a file from stdin
 
@@ -367,6 +367,6 @@ When this file contains imports, Rollup will try to resolve them relative to the
 import foo from "-";
 ```
 
-in any file will prompt Rollup to try to read the imported file from `stdin` and assign the default export to `foo`. You can pass the [`--no-stdin`](guide/en/#--no-stdin) CLI flag to Rollup to treat `-` as a regular file name instead.
+in any file will prompt Rollup to try to read the imported file from `stdin` and assign the default export to `foo`. You can pass the [`--no-stdin`](#--no-stdin) CLI flag to Rollup to treat `-` as a regular file name instead.
 
 The JavaScript API will always treat `-` as a regular file name.

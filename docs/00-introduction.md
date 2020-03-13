@@ -16,7 +16,7 @@ npm install --global rollup
 
 ### Quick start
 
- Rollup can be used either through a [command line interface](guide/en/#command-line-reference) with an optional configuration file, or else through its [JavaScript API](guide/en/#javascript-api). Run `rollup --help` to see the available options and parameters.
+ Rollup can be used either through a [command line interface](#command-line-reference) with an optional configuration file, or else through its [JavaScript API](#javascript-api). Run `rollup --help` to see the available options and parameters.
 
 > See [rollup-starter-lib](https://github.com/rollup/rollup-starter-lib) and
 [rollup-starter-app](https://github.com/rollup/rollup-starter-app) to see
